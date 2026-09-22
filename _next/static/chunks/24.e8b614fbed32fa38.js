@@ -302,56 +302,7 @@
         { code: "ru", name: "Русский", flag: "\uD83C\uDDF7\uD83C\uDDFA" },
       ];
       function C() {
-        let e = (0, u.Ym)(),
-          a = (0, g.rd)(),
-          s = (0, g.a8)(),
-          r = (0, _.useParams)(),
-          n = A.find((a) => a.code === e);
-        return (0, t.jsxs)(b, {
-          value: e,
-          onValueChange: (e) => {
-            a.replace({ pathname: s, params: r }, { locale: e });
-          },
-          children: [
-            (0, t.jsxs)(j, {
-              className:
-                "w-[140px] bg-background/50 backdrop-blur-sm border-muted-foreground/20 hover:bg-accent/50 transition-all rounded-full px-4 gap-2",
-              children: [
-                (0, t.jsx)(z.A, { className: "h-4 w-4 text-primary shrink-0" }),
-                (0, t.jsx)(v, { children: n?.name }),
-              ],
-            }),
-            (0, t.jsx)(w, {
-              align: "end",
-              className:
-                "bg-popover/95 backdrop-blur-md border-muted-foreground/20 min-w-[160px] rounded-xl shadow-xl",
-              children: A.map((e) =>
-                (0, t.jsx)(
-                  y,
-                  {
-                    value: e.code,
-                    className:
-                      "rounded-lg m-1 cursor-pointer focus:bg-primary/10 focus:text-primary transition-colors",
-                    children: (0, t.jsxs)("span", {
-                      className: "flex items-center gap-3",
-                      children: [
-                        (0, t.jsx)("span", {
-                          className: "text-lg leading-none",
-                          children: e.flag,
-                        }),
-                        (0, t.jsx)("span", {
-                          className: "font-medium",
-                          children: e.name,
-                        }),
-                      ],
-                    }),
-                  },
-                  e.code,
-                ),
-              ),
-            }),
-          ],
-        });
+        return null;
       }
       function q() {
         return (0, t.jsx)("header", {
