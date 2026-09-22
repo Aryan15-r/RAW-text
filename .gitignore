@@ -45,3 +45,4 @@ playwright/.cache/
 temp/
 tmp/
 scratch/
+*.original.*
