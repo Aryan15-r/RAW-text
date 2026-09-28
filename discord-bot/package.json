@@ -1,0 +1,19 @@
+{
+  "name": "ghostglyph-discord-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Serverless Discord Bot for GhostGlyph invisible emoji steganography on Cloudflare Workers",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "register": "node registerCommands.js",
+    "test": "node test/test-stego.js"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

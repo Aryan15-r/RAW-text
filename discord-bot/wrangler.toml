@@ -1,0 +1,12 @@
+name = "emoji-crypt-bot"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Non-sensitive application configuration
+APPLICATION_ID = "1554253457073111060"
+
+# NOTE: Production secrets (BOT_TOKEN, PUBLIC_KEY) should never be stored here.
+# Configure them using Wrangler CLI:
+#   npx wrangler secret put BOT_TOKEN
+#   npx wrangler secret put PUBLIC_KEY
