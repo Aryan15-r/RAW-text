@@ -7,7 +7,9 @@ export function formatDecodedResponse(plaintext) {
   return [
     '**Decoded message:**',
     '',
+    '```',
     plaintext,
+    '```',
     '',
     `**Characters:** ${plaintext.length}`
   ].join('\n');
@@ -47,7 +49,9 @@ export function formatEncodedEphemeralResponse(encodedString, charCount, carrier
     '🔒 **GhostGlyph Encoded Successfully!**',
     '',
     '**Copy the carrier emoji/text below:**',
-    `\`\`\`\n${encodedString}\n\`\`\``,
+    '```',
+    encodedString,
+    '```',
     `*Payload embedded: ${charCount} chars across ${carrierCount} carrier glyph(s).*`,
     '*Paste this into any channel or DM — only users with the bot or GhostGlyph website can decode it.*'
   ].join('\n');
